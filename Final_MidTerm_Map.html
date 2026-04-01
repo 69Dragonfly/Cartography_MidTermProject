@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Mapbox Example 6- UK Flowmap 2011</title>
+
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
+
+<style>
+    body { margin: 100; padding: 0; }
+    #map { position: absolute; top: 300; bottom: 100; width: 75%; };
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZHJhZ29uZmx5NjkiLCJhIjoiY21tMHRodm93MDJiZTJ2cTIyODQ4bW16YyJ9.113KesgL0QmRx4zf91hm9w';                   //Mapbox Accesstoken
+
+    var map = new mapboxgl.Map({
+        container: 'map', // container id
+        style: 'mapbox://styles/dragonfly69/cmml5tgmk000p01sk0a09a25l', // stylesheet URL, the style that you've created
+        center: [-104.80051, 38.89288], // starting position [lng, lat]
+        zoom: 6 // starting zoom
+    });
+
+</script>
+
+</body>
+</html>
